@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trackie</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,100&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="image-container">
+        <img src="logo.png" alt="Trackie Logo" class="logo">
+    </div>
+
+    <div class="page-title">
+        <h1>Trackie App</h1>
+        <h2>Habits shape time. Time shapes you.</h2>
+    </div>
+
+    <div class="button-group">
+        <a href="privacy-policy.html" class="btn">Privacy Policy</a>
+        <a href="terms-of-use.html" class="btn">Terms of Use</a>
+    </div>
+    <div class="gap"></div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <a href="https://indigocats.github.io/" target="_blank" class="footer-btn">IndigoCats</a>
+            <span class="footer-subtext">2024, İzmir</span>
+        </div>
+    </footer>
+    <script>
+        window.addEventListener('scroll', function () {
+            const footer = document.querySelector('.footer');
+            const scrollPosition = window.scrollY + window.innerHeight;
+            const triggerPoint = document.body.offsetHeight - 100;
+    
+            if (scrollPosition >= triggerPoint) {
+                footer.classList.add('show');
+            }
+        });
+    </script>
+</body>
+</html>
